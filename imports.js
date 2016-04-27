@@ -12,7 +12,7 @@ var spendHistChart = dc.barChart("#chart-hist-spend");
 var spenderRowChart = dc.rowChart("#chart-row-spenders");
 var continentMap = d3.geo.mercator("#map-continents").scale(100);
 
-d3.csv('/data/data.csv', function (error, data) {
+d3.csv('/usda/data/data.csv', function (error, data) {
     
     var spendData = data;
 
