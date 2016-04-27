@@ -1,0 +1,737 @@
+localhost:usda alex$ python -m SimpleHTTPServer
+Serving HTTP on 0.0.0.0 port 8000 ...
+127.0.0.1 - - [15/Apr/2016 16:30:57] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [15/Apr/2016 16:30:57] "GET /imports.js HTTP/1.1" 200 -
+127.0.0.1 - - [15/Apr/2016 16:30:58] "GET /data.csv HTTP/1.1" 200 -
+^CTraceback (most recent call last):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/runpy.py", line 162, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/SimpleHTTPServer.py", line 220, in <module>
+    test()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/SimpleHTTPServer.py", line 216, in test
+    BaseHTTPServer.test(HandlerClass, ServerClass)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/BaseHTTPServer.py", line 599, in test
+    httpd.serve_forever()
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/SocketServer.py", line 236, in serve_forever
+    poll_interval)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/SocketServer.py", line 155, in _eintr_retry
+    return func(*args)
+KeyboardInterrupt
+localhost:usda alex$ npm install phantomjs-test-starter
+npm WARN package.json npm@1.4.3 No README data
+npm WARN package.json npm@1.4.3 Non-dependency in bundleDependencies: inherits
+npm WARN package.json npm@1.4.3 Non-dependency in bundleDependencies: normalize-package-data
+npm WARN package.json npm@1.4.3 No bin file found at ./bin/npm-cli.js
+npm WARN installMany inherits was bundled with npm@1.4.3, but bundled package wasn't found in unpacked tree
+npm WARN installMany normalize-package-data was bundled with npm@1.4.3, but bundled package wasn't found in unpacked tree
+npm WARN peerDependencies The peer dependency grunt@~0.4.1 included from phantomjs-test-starter will no
+npm WARN peerDependencies longer be automatically installed to fulfill the peerDependency 
+npm WARN peerDependencies in npm 3+. Your application will need to depend on it explicitly.
+npm WARN installMany inherits was bundled with npm@1.4.3, but bundled package wasn't found in unpacked tree
+npm WARN installMany normalize-package-data was bundled with npm@1.4.3, but bundled package wasn't found in unpacked tree
+npm WARN deprecated lodash@0.9.2: Grunt needs your help! See https://github.com/gruntjs/grunt/issues/1403.
+npm WARN deprecated graceful-fs@1.2.3: graceful-fs version 3 and before will fail on newer node releases. Please update to graceful-fs@^4.0.0 as soon as possible.
+grunt@0.4.5 ../../node_modules/grunt
+├── dateformat@1.0.2-1.2.3
+├── eventemitter2@0.4.14
+├── getobject@0.1.0
+├── rimraf@2.2.8
+├── colors@0.6.2
+├── nopt@1.0.10
+├── async@0.1.22
+├── hooker@0.2.3
+├── grunt-legacy-util@0.2.0
+├── exit@0.1.2
+├── lodash@0.9.2
+├── glob@3.1.21 (inherits@1.0.2, graceful-fs@1.2.3)
+├── coffee-script@1.3.3
+├── underscore.string@2.2.1
+├── iconv-lite@0.2.11
+├── findup-sync@0.1.3 (glob@3.2.11, lodash@2.4.2)
+├── grunt-legacy-log@0.1.3 (grunt-legacy-log-utils@0.1.1, underscore.string@2.3.3, lodash@2.4.2)
+└── js-yaml@2.0.5 (argparse@0.1.16, esprima@1.0.4)
+
+phantomjs-test-starter@1.0.0 ../../node_modules/phantomjs-test-starter
+localhost:usda alex$ git clone git@github.com:JamieMason/phantomjs-test-starter.git
+Cloning into 'phantomjs-test-starter'...
+Warning: Permanently added the RSA host key for IP address '192.30.252.121' to the list of known hosts.
+remote: Counting objects: 204, done.
+remote: Total 204 (delta 0), reused 0 (delta 0), pack-reused 204
+Receiving objects: 100% (204/204), 157.89 KiB | 0 bytes/s, done.
+Resolving deltas: 100% (102/102), done.
+Checking connectivity... done.
+localhost:usda alex$ cd phantomjs-test-starter
+localhost:phantomjs-test-starter alex$ npm install
+npm WARN package.json phantomjs-test-starter@1.0.0 No license field.
+npm WARN deprecated lodash@0.9.2: Grunt needs your help! See https://github.com/gruntjs/grunt/issues/1403.
+npm WARN deprecated graceful-fs@1.2.3: graceful-fs version 3 and before will fail on newer node releases. Please update to graceful-fs@^4.0.0 as soon as possible.
+grunt-contrib-copy@0.4.1 node_modules/grunt-contrib-copy
+
+jasmine-expect@1.21.0 node_modules/jasmine-expect
+
+grunt-contrib-clean@0.5.0 node_modules/grunt-contrib-clean
+└── rimraf@2.2.8
+
+grunt-shell@0.5.0 node_modules/grunt-shell
+└── stripcolorcodes@0.1.0
+
+grunt-cli@0.1.13 node_modules/grunt-cli
+├── resolve@0.3.1
+├── nopt@1.0.10 (abbrev@1.0.7)
+└── findup-sync@0.1.3 (glob@3.2.11, lodash@2.4.2)
+
+grunt@0.4.5 node_modules/grunt
+├── dateformat@1.0.2-1.2.3
+├── which@1.0.9
+├── eventemitter2@0.4.14
+├── getobject@0.1.0
+├── rimraf@2.2.8
+├── colors@0.6.2
+├── async@0.1.22
+├── grunt-legacy-util@0.2.0
+├── hooker@0.2.3
+├── exit@0.1.2
+├── nopt@1.0.10 (abbrev@1.0.7)
+├── glob@3.1.21 (inherits@1.0.2, graceful-fs@1.2.3)
+├── lodash@0.9.2
+├── minimatch@0.2.14 (sigmund@1.0.1, lru-cache@2.7.3)
+├── coffee-script@1.3.3
+├── underscore.string@2.2.1
+├── iconv-lite@0.2.11
+├── findup-sync@0.1.3 (glob@3.2.11, lodash@2.4.2)
+├── grunt-legacy-log@0.1.3 (grunt-legacy-log-utils@0.1.1, underscore.string@2.3.3, lodash@2.4.2)
+└── js-yaml@2.0.5 (argparse@0.1.16, esprima@1.0.4)
+
+grunt-contrib-jshint@0.6.5 node_modules/grunt-contrib-jshint
+└── jshint@2.1.11 (console-browserify@0.1.6, underscore@1.4.4, minimatch@0.4.0, shelljs@0.1.4, cli@0.4.5)
+
+grunt-init@0.2.1 node_modules/grunt-init
+├── colors@0.6.2
+├── semver@1.0.14
+├── hooker@0.2.3
+└── prompt@0.1.12 (async@0.1.22, pkginfo@0.4.0, winston@0.5.11)
+
+istanbul@0.1.46 node_modules/istanbul
+├── which@1.0.9
+├── abbrev@1.0.7
+├── nopt@2.1.2
+├── wordwrap@0.0.3
+├── async@0.2.10
+├── mkdirp@0.3.5
+├── resolve@0.5.1
+├── fileset@0.1.8 (minimatch@0.4.0, glob@3.2.11)
+├── esprima@1.0.4
+├── escodegen@0.0.23 (estraverse@0.0.4, source-map@0.5.3)
+└── handlebars@1.0.12 (optimist@0.3.7, uglify-js@2.3.6)
+localhost:phantomjs-test-starter alex$ phantomjs
+-bash: phantomjs: command not found
+localhost:phantomjs-test-starter alex$ brew update && brew install phantomjs
+error: Your local changes to the following files would be overwritten by merge:
+	Library/Formula/open-mpi.rb
+Please, commit your changes or stash them before you can merge.
+Aborting
+Error: Failure while executing: git pull -q origin refs/heads/master:refs/remotes/origin/master
+localhost:phantomjs-test-starter alex$ cd ..
+localhost:usda alex$ ls
+CALCULATIONSfoodsbycountry2015.csv	imports.js
+Default.png				index.html
+bachelors-degrees.csv			js
+components				oldimports.js
+css					oldindex.html
+data.csv				phantomjs-test-starter
+img					spend.csv
+importedfoodsbycountry2015.xls		us.json
+localhost:usda alex$ brew update && brew install phantomjs
+error: Your local changes to the following files would be overwritten by merge:
+	Library/Formula/open-mpi.rb
+Please, commit your changes or stash them before you can merge.
+Aborting
+Error: Failure while executing: git pull -q origin refs/heads/master:refs/remotes/origin/master
+localhost:usda alex$ brew install phantomjs
+==> Downloading https://downloads.sf.net/project/machomebrew/Bottles/phantomjs-1
+######################################################################## 100.0%
+==> Pouring phantomjs-1.9.7_1.mavericks.bottle.tar.gz
+🍺  /usr/local/Cellar/phantomjs/1.9.7_1: 104 files, 34M
+localhost:usda alex$ phantomjs --version
+1.9.7
+localhost:usda alex$ npm install -g grunt-cli
+/usr/local/bin/grunt -> /usr/local/lib/node_modules/grunt-cli/bin/grunt
+grunt-cli@1.2.0 /usr/local/lib/node_modules/grunt-cli
+├── grunt-known-options@1.1.0
+├── resolve@1.1.7
+├── nopt@3.0.6 (abbrev@1.0.7)
+└── findup-sync@0.3.0 (glob@5.0.15)
+localhost:usda alex$ grunt test
+A valid Gruntfile could not be found. Please see the getting started guide for
+more information on how to configure grunt: http://gruntjs.com/getting-started
+Fatal error: Unable to find Gruntfile.
+localhost:usda alex$ grunt-init
+-bash: grunt-init: command not found
+localhost:usda alex$ cd ..
+localhost:Desktop alex$ ls
+$
+15 - Batucada Negro.mp3
+2012-Alex-Map-Project
+2012-election
+261
+9.30.13.txt
+AlexH_mapViz
+BIGGER
+BOOKS:LIT:PDF
+Beyond the Infinite, response.txt
+Bolt Bus.pdf
+CraveLabs
+DataDog3.25.16.png
+Development
+Devise setup for Ruby.txt
+FF
+FaunaDB
+Github protocol.txt
+Hack4Congress
+Higuera_Alex-Moat_Q2a
+Job Hunting
+Memos
+MindWave
+Muse-test
+NEST_terminal_1.txt
+NEST_terminal_2_older.txt
+Projects
+PyLadies-webscraping-master
+Screen Shot 2015-09-25 at 5.34.09 PM.png
+Screen Shot 2015-10-16 at 11.48.10 AM.png
+Screen Shot 2015-11-20 at 12.11.51 AM.png
+Screen Shot 2015-12-10 at 7.06.36 PM.png
+Screen Shot 2015-12-10 at 8.03.03 PM.png
+Screen Shot 2016-01-09 at 11.09.29 AM.png
+Screen Shot 2016-03-04 at 7.09.59 PM.png
+Screen Shot 2016-03-04 at 7.10.52 PM.png
+Screen Shot 2016-03-12 at 2.33.39 PM.png
+Screen Shot 2016-04-11 at 1.48.35 PM.png
+Screen Shot 2016-04-11 at 10.09.07 PM.png
+Screen Shot 2016-04-11 at 10.20.05 PM.png
+Screen Shot 2016-04-11 at 11.17.28 PM.png
+Screen Shot 2016-04-11 at 11.17.52 PM.png
+Sunshine
+SystemConfigurationUnder HDLIBRarary Preferences
+To Read
+TwitterInterviewPrep.odt
+WCE 
+WCE-sandbox
+WCEwebsite-original
+WeSpire
+Winter 2015
+airport_distance_finder.html
+alexhiguera.com
+apigee_workshop.txt
+bebehz.jpg
+bigger_mean
+bookmarks_3_13_16.html
+car stuff
+choropleth
+codingNotesMarch2016.txt
+contactus.php
+dashboard2016.xhtml
+datadog
+done
+figgy
+fotos
+funhouse_fishbowl
+hello.rb
+highcharts.js
+koalas
+last-BIGGER
+media_lab
+medialab.py
+myApp
+nest
+nest-2.6.0
+no-tiles-BIGGER
+nodejs-private-webchat (1)
+numpy-1.4.0rc2
+numpy-1.4.0rc2.zip
+numpy-1.9.2
+old-bigger
+onboarding.xhtml
+orig_funhouse_fishbowl_orig
+pb.csv
+pb.py
+ppic.jpg
+random images
+resources
+restaurants-ionic-files
+restaurants-ionic-files.zip
+scrape.py
+server.js
+starter-node-angular-master
+test.csv
+test1copy
+testing.py
+tile-sets
+travel
+try.txt
+twtr links.txt
+un.zip
+unemployment
+untitled.html
+usda
+vp
+whprsnpr
+workshop_apigee
+localhost:Desktop alex$ cd .
+localhost:Desktop alex$ ls
+$
+15 - Batucada Negro.mp3
+2012-Alex-Map-Project
+2012-election
+261
+9.30.13.txt
+AlexH_mapViz
+BIGGER
+BOOKS:LIT:PDF
+Beyond the Infinite, response.txt
+Bolt Bus.pdf
+CraveLabs
+DataDog3.25.16.png
+Development
+Devise setup for Ruby.txt
+FF
+FaunaDB
+Github protocol.txt
+Hack4Congress
+Higuera_Alex-Moat_Q2a
+Job Hunting
+Memos
+MindWave
+Muse-test
+NEST_terminal_1.txt
+NEST_terminal_2_older.txt
+Projects
+PyLadies-webscraping-master
+Screen Shot 2015-09-25 at 5.34.09 PM.png
+Screen Shot 2015-10-16 at 11.48.10 AM.png
+Screen Shot 2015-11-20 at 12.11.51 AM.png
+Screen Shot 2015-12-10 at 7.06.36 PM.png
+Screen Shot 2015-12-10 at 8.03.03 PM.png
+Screen Shot 2016-01-09 at 11.09.29 AM.png
+Screen Shot 2016-03-04 at 7.09.59 PM.png
+Screen Shot 2016-03-04 at 7.10.52 PM.png
+Screen Shot 2016-03-12 at 2.33.39 PM.png
+Screen Shot 2016-04-11 at 1.48.35 PM.png
+Screen Shot 2016-04-11 at 10.09.07 PM.png
+Screen Shot 2016-04-11 at 10.20.05 PM.png
+Screen Shot 2016-04-11 at 11.17.28 PM.png
+Screen Shot 2016-04-11 at 11.17.52 PM.png
+Sunshine
+SystemConfigurationUnder HDLIBRarary Preferences
+To Read
+TwitterInterviewPrep.odt
+WCE 
+WCE-sandbox
+WCEwebsite-original
+WeSpire
+Winter 2015
+airport_distance_finder.html
+alexhiguera.com
+apigee_workshop.txt
+bebehz.jpg
+bigger_mean
+bookmarks_3_13_16.html
+car stuff
+choropleth
+codingNotesMarch2016.txt
+contactus.php
+dashboard2016.xhtml
+datadog
+done
+figgy
+fotos
+funhouse_fishbowl
+hello.rb
+highcharts.js
+koalas
+last-BIGGER
+media_lab
+medialab.py
+myApp
+nest
+nest-2.6.0
+no-tiles-BIGGER
+nodejs-private-webchat (1)
+numpy-1.4.0rc2
+numpy-1.4.0rc2.zip
+numpy-1.9.2
+old-bigger
+onboarding.xhtml
+orig_funhouse_fishbowl_orig
+pb.csv
+pb.py
+ppic.jpg
+random images
+resources
+restaurants-ionic-files
+restaurants-ionic-files.zip
+scrape.py
+server.js
+starter-node-angular-master
+test.csv
+test1copy
+testing.py
+tile-sets
+travel
+try.txt
+twtr links.txt
+un.zip
+unemployment
+untitled.html
+usda
+vp
+whprsnpr
+workshop_apigee
+localhost:Desktop alex$ cd ..
+localhost:~ alex$ ls
+$			Pictures		octave-core
+AndroidStudioProjects	Programming		octave-workspace
+Applications		Public			opt
+CompSci			SEE			package.json
+Desktop			Sites			respositories
+Documents		Soulseek Chat Logs	sp
+Downloads		Soulseek Downloads	space
+Dropbox			T.png			src
+FBX Converter 2013.3	Tango			tangoFeatureGraphic.png
+GearVR_workshop_2015	a.out			tangominoes.png
+GlassFish_Server	config.log		tangominoesIcon.png
+Library			cravelabs.pem		tangominos
+Movies			keystores		test.sqlite3
+Music			local			wget-1.13.4
+MyndPlayer		mgythWE.jpg		wget-1.13.4.tar.gz
+NetBeansProjects	myproject
+New Unity Project	node_modules
+localhost:~ alex$ cd ..
+localhost:Users alex$ ls
+Shared	alex
+localhost:Users alex$ cd ..
+localhost:/ alex$ ls
+Applications			dev
+Library				etc
+Network				home
+System				mach_kernel
+User Guides And Information	net
+Users				opt
+Volumes				private
+anaconda			sbin
+bin				tmp
+cores				usr
+data				var
+localhost:/ alex$ cd .
+localhost:/ alex$ cd ..
+localhost:/ alex$ ls
+Applications			dev
+Library				etc
+Network				home
+System				mach_kernel
+User Guides And Information	net
+Users				opt
+Volumes				private
+anaconda			sbin
+bin				tmp
+cores				usr
+data				var
+localhost:/ alex$ npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help json` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg> --save` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+name: npm install -g grunt-cli
+Sorry, name can only contain URL-friendly characters.
+name: npm help json
+Sorry, name can only contain URL-friendly characters.
+name: 'npm help json'
+Sorry, name can only contain URL-friendly characters.
+name: usda
+version: (1.0.0) 1.0.0
+description: USDA project
+entry point: (index.js) index.js
+test command: 
+git repository: 
+keywords: 
+author: Alex Higuera
+license: (ISC) 
+About to write to /package.json:
+
+{
+  "name": "usda",
+  "version": "1.0.0",
+  "description": "USDA project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alex Higuera",
+  "license": "ISC"
+}
+
+
+Is this ok? (yes) yes
+npm ERR! Darwin 13.4.0
+npm ERR! argv "node" "/usr/local/bin/npm" "init"
+npm ERR! node v0.12.7
+npm ERR! npm  v2.11.3
+npm ERR! path /package.json
+npm ERR! code EACCES
+npm ERR! errno -13
+
+npm ERR! Error: EACCES, open '/package.json'
+npm ERR!     at Error (native)
+npm ERR!  { [Error: EACCES, open '/package.json'] errno: -13, code: 'EACCES', path: '/package.json' }
+npm ERR! 
+npm ERR! Please try running this command again as root/Administrator.
+npm ERR! Darwin 13.4.0
+npm ERR! argv "node" "/usr/local/bin/npm" "init"
+npm ERR! node v0.12.7
+npm ERR! npm  v2.11.3
+npm ERR! path npm-debug.log.e1dc75de23c49e77f1199b2224ce9cf7
+npm ERR! code EACCES
+npm ERR! errno -13
+
+npm ERR! Error: EACCES, open 'npm-debug.log.e1dc75de23c49e77f1199b2224ce9cf7'
+npm ERR!     at Error (native)
+npm ERR!  { [Error: EACCES, open 'npm-debug.log.e1dc75de23c49e77f1199b2224ce9cf7']
+npm ERR!   errno: -13,
+npm ERR!   code: 'EACCES',
+npm ERR!   path: 'npm-debug.log.e1dc75de23c49e77f1199b2224ce9cf7' }
+npm ERR! 
+npm ERR! Please try running this command again as root/Administrator.
+
+npm ERR! Please include the following file with any support request:
+npm ERR!     /npm-debug.log
+localhost:/ alex$ ls
+Applications			dev
+Library				etc
+Network				home
+System				mach_kernel
+User Guides And Information	net
+Users				opt
+Volumes				private
+anaconda			sbin
+bin				tmp
+cores				usr
+data				var
+localhost:/ alex$ cd Users/alex/Desktop/usda
+localhost:usda alex$ ;s
+-bash: syntax error near unexpected token `;'
+localhost:usda alex$ ls
+CALCULATIONSfoodsbycountry2015.csv	imports.js
+Default.png				index.html
+bachelors-degrees.csv			js
+components				oldimports.js
+css					oldindex.html
+data.csv				phantomjs-test-starter
+img					spend.csv
+importedfoodsbycountry2015.xls		us.json
+localhost:usda alex$ cd phantomjs-test-starter/
+localhost:phantomjs-test-starter alex$ grunt test
+Running "clean:test" (clean) task
+
+Running "copy:test" (copy) task
+Created 8 directories, copied 14 files
+
+Running "shell:instrument" (shell) task
+.
+Processed [1] files in 0 secs
+
+Running "shell:test" (shell) task
+.
+.
+.
+.
+.
+
+
+Finished in 0.071 seconds
+5 tests, 5 assertions, 0 failures, 0 skipped
+
+
+Running "coverage" task
+
+Running "clean:test" (clean) task
+Cleaning instrumented...OK
+
+Done, without errors.
+localhost:phantomjs-test-starter alex$ cd ..
+localhost:usda alex$ ls
+CALCULATIONSfoodsbycountry2015.csv	imports.js
+Default.png				index.html
+bachelors-degrees.csv			js
+components				oldimports.js
+css					oldindex.html
+data.csv				phantomjs-test-starter
+img					spend.csv
+importedfoodsbycountry2015.xls		us.json
+localhost:usda alex$ sudo npm install phantom-jasmine -g
+Password:
+npm WARN deprecated graceful-fs@1.1.14: graceful-fs version 3 and before will fail on newer node releases. Please update to graceful-fs@^4.0.0 as soon as possible.
+/usr/local/bin/phantom-jasmine -> /usr/local/lib/node_modules/phantom-jasmine/bin/phantom-jasmine
+phantom-jasmine@0.3.0 /usr/local/lib/node_modules/phantom-jasmine
+├── walkdir@0.0.4
+├── commander@1.0.3 (keypress@0.1.0)
+├── mustache@0.5.2
+└── glob@3.1.12 (inherits@1.0.2, graceful-fs@1.1.14, minimatch@0.2.14)
+localhost:usda alex$ phantom-jasmine file://localhost/Users/Alex/Desktop/usda/index.html 
+events.js:87
+      throw Error('Uncaught, unspecified "error" event.');
+            ^
+Error: Uncaught, unspecified "error" event.
+    at Error (native)
+    at EventEmitter.emit (events.js:87:13)
+    at EventEmitter.<anonymous> (/usr/local/lib/node_modules/phantom-jasmine/node_modules/walkdir/walkdir.js:189:19)
+    at EventEmitter.g (events.js:199:16)
+    at EventEmitter.emit (events.js:110:17)
+    at statAction (/usr/local/lib/node_modules/phantom-jasmine/node_modules/walkdir/walkdir.js:57:17)
+    at statter (/usr/local/lib/node_modules/phantom-jasmine/node_modules/walkdir/walkdir.js:91:7)
+    at walkdir (/usr/local/lib/node_modules/phantom-jasmine/node_modules/walkdir/walkdir.js:193:3)
+    at Function.walkdir.sync (/usr/local/lib/node_modules/phantom-jasmine/node_modules/walkdir/walkdir.js:12:10)
+    at /usr/local/lib/node_modules/phantom-jasmine/lib/index.js:47:27
+localhost:usda alex$ phantom-jasmine file://localhost/usr/local/lib/node-modules/phantom-jasmine/examples/TestRunner.html 
+events.js:87
+      throw Error('Uncaught, unspecified "error" event.');
+            ^
+Error: Uncaught, unspecified "error" event.
+    at Error (native)
+    at EventEmitter.emit (events.js:87:13)
+    at EventEmitter.<anonymous> (/usr/local/lib/node_modules/phantom-jasmine/node_modules/walkdir/walkdir.js:189:19)
+    at EventEmitter.g (events.js:199:16)
+    at EventEmitter.emit (events.js:110:17)
+    at statAction (/usr/local/lib/node_modules/phantom-jasmine/node_modules/walkdir/walkdir.js:57:17)
+    at statter (/usr/local/lib/node_modules/phantom-jasmine/node_modules/walkdir/walkdir.js:91:7)
+    at walkdir (/usr/local/lib/node_modules/phantom-jasmine/node_modules/walkdir/walkdir.js:193:3)
+    at Function.walkdir.sync (/usr/local/lib/node_modules/phantom-jasmine/node_modules/walkdir/walkdir.js:12:10)
+    at /usr/local/lib/node_modules/phantom-jasmine/lib/index.js:47:27
+localhost:usda alex$ phantom-jasmine file://localhost/Users/Alex/Desktop/usda/phantom-jasmine/examples/TestRunner.html 
+events.js:87
+      throw Error('Uncaught, unspecified "error" event.');
+            ^
+Error: Uncaught, unspecified "error" event.
+    at Error (native)
+    at EventEmitter.emit (events.js:87:13)
+    at EventEmitter.<anonymous> (/usr/local/lib/node_modules/phantom-jasmine/node_modules/walkdir/walkdir.js:189:19)
+    at EventEmitter.g (events.js:199:16)
+    at EventEmitter.emit (events.js:110:17)
+    at statAction (/usr/local/lib/node_modules/phantom-jasmine/node_modules/walkdir/walkdir.js:57:17)
+    at statter (/usr/local/lib/node_modules/phantom-jasmine/node_modules/walkdir/walkdir.js:91:7)
+    at walkdir (/usr/local/lib/node_modules/phantom-jasmine/node_modules/walkdir/walkdir.js:193:3)
+    at Function.walkdir.sync (/usr/local/lib/node_modules/phantom-jasmine/node_modules/walkdir/walkdir.js:12:10)
+    at /usr/local/lib/node_modules/phantom-jasmine/lib/index.js:47:27
+localhost:usda alex$ phantom-jasmine file://localhost/Users/Alex/Desktop/usda/phantom-jasmine/examples/TestRunner.html 
+events.js:87
+      throw Error('Uncaught, unspecified "error" event.');
+            ^
+Error: Uncaught, unspecified "error" event.
+    at Error (native)
+    at EventEmitter.emit (events.js:87:13)
+    at EventEmitter.<anonymous> (/usr/local/lib/node_modules/phantom-jasmine/node_modules/walkdir/walkdir.js:189:19)
+    at EventEmitter.g (events.js:199:16)
+    at EventEmitter.emit (events.js:110:17)
+    at statAction (/usr/local/lib/node_modules/phantom-jasmine/node_modules/walkdir/walkdir.js:57:17)
+    at statter (/usr/local/lib/node_modules/phantom-jasmine/node_modules/walkdir/walkdir.js:91:7)
+    at walkdir (/usr/local/lib/node_modules/phantom-jasmine/node_modules/walkdir/walkdir.js:193:3)
+    at Function.walkdir.sync (/usr/local/lib/node_modules/phantom-jasmine/node_modules/walkdir/walkdir.js:12:10)
+    at /usr/local/lib/node_modules/phantom-jasmine/lib/index.js:47:27
+localhost:usda alex$ phantom-jasmine file://localhost/Users/Alex/Desktop/usda/phantom-jasmine/examples/TestRunner.html 
+events.js:87
+      throw Error('Uncaught, unspecified "error" event.');
+            ^
+Error: Uncaught, unspecified "error" event.
+    at Error (native)
+    at EventEmitter.emit (events.js:87:13)
+    at EventEmitter.<anonymous> (/usr/local/lib/node_modules/phantom-jasmine/node_modules/walkdir/walkdir.js:189:19)
+    at EventEmitter.g (events.js:199:16)
+    at EventEmitter.emit (events.js:110:17)
+    at statAction (/usr/local/lib/node_modules/phantom-jasmine/node_modules/walkdir/walkdir.js:57:17)
+    at statter (/usr/local/lib/node_modules/phantom-jasmine/node_modules/walkdir/walkdir.js:91:7)
+    at walkdir (/usr/local/lib/node_modules/phantom-jasmine/node_modules/walkdir/walkdir.js:193:3)
+    at Function.walkdir.sync (/usr/local/lib/node_modules/phantom-jasmine/node_modules/walkdir/walkdir.js:12:10)
+    at /usr/local/lib/node_modules/phantom-jasmine/lib/index.js:47:27
+localhost:usda alex$ phantom-jasmine file://localhost/Users/Alex/Desktop/usda/phantom-jasmine/examples/TestRunner.html 
+events.js:87
+      throw Error('Uncaught, unspecified "error" event.');
+            ^
+Error: Uncaught, unspecified "error" event.
+    at Error (native)
+    at EventEmitter.emit (events.js:87:13)
+    at EventEmitter.<anonymous> (/usr/local/lib/node_modules/phantom-jasmine/node_modules/walkdir/walkdir.js:189:19)
+    at EventEmitter.g (events.js:199:16)
+    at EventEmitter.emit (events.js:110:17)
+    at statAction (/usr/local/lib/node_modules/phantom-jasmine/node_modules/walkdir/walkdir.js:57:17)
+    at statter (/usr/local/lib/node_modules/phantom-jasmine/node_modules/walkdir/walkdir.js:91:7)
+    at walkdir (/usr/local/lib/node_modules/phantom-jasmine/node_modules/walkdir/walkdir.js:193:3)
+    at Function.walkdir.sync (/usr/local/lib/node_modules/phantom-jasmine/node_modules/walkdir/walkdir.js:12:10)
+    at /usr/local/lib/node_modules/phantom-jasmine/lib/index.js:47:27
+localhost:usda alex$ phantom-jasmine file://localhost/Users/Alex/Desktop/usda/phantom-jasmine/examples/TestRunner.html 
+events.js:87
+      throw Error('Uncaught, unspecified "error" event.');
+            ^
+Error: Uncaught, unspecified "error" event.
+    at Error (native)
+    at EventEmitter.emit (events.js:87:13)
+    at EventEmitter.<anonymous> (/usr/local/lib/node_modules/phantom-jasmine/node_modules/walkdir/walkdir.js:189:19)
+    at EventEmitter.g (events.js:199:16)
+    at EventEmitter.emit (events.js:110:17)
+    at statAction (/usr/local/lib/node_modules/phantom-jasmine/node_modules/walkdir/walkdir.js:57:17)
+    at statter (/usr/local/lib/node_modules/phantom-jasmine/node_modules/walkdir/walkdir.js:91:7)
+    at walkdir (/usr/local/lib/node_modules/phantom-jasmine/node_modules/walkdir/walkdir.js:193:3)
+    at Function.walkdir.sync (/usr/local/lib/node_modules/phantom-jasmine/node_modules/walkdir/walkdir.js:12:10)
+    at /usr/local/lib/node_modules/phantom-jasmine/lib/index.js:47:27
+localhost:usda alex$ phantom-jasmine file://localhost/Users/Alex/Desktop/usda/phantom-jasmine/examples/TestRunner.html 
+events.js:87
+      throw Error('Uncaught, unspecified "error" event.');
+            ^
+Error: Uncaught, unspecified "error" event.
+    at Error (native)
+    at EventEmitter.emit (events.js:87:13)
+    at EventEmitter.<anonymous> (/usr/local/lib/node_modules/phantom-jasmine/node_modules/walkdir/walkdir.js:189:19)
+    at EventEmitter.g (events.js:199:16)
+    at EventEmitter.emit (events.js:110:17)
+    at statAction (/usr/local/lib/node_modules/phantom-jasmine/node_modules/walkdir/walkdir.js:57:17)
+    at statter (/usr/local/lib/node_modules/phantom-jasmine/node_modules/walkdir/walkdir.js:91:7)
+    at walkdir (/usr/local/lib/node_modules/phantom-jasmine/node_modules/walkdir/walkdir.js:193:3)
+    at Function.walkdir.sync (/usr/local/lib/node_modules/phantom-jasmine/node_modules/walkdir/walkdir.js:12:10)
+    at /usr/local/lib/node_modules/phantom-jasmine/lib/index.js:47:27
+localhost:usda alex$ phantom-jasmine file://localhost/Users/Alex/Desktop/usda/phantom-jasmine/examples/TestRunner.html 
+events.js:87
+      throw Error('Uncaught, unspecified "error" event.');
+            ^
+Error: Uncaught, unspecified "error" event.
+    at Error (native)
+    at EventEmitter.emit (events.js:87:13)
+    at EventEmitter.<anonymous> (/usr/local/lib/node_modules/phantom-jasmine/node_modules/walkdir/walkdir.js:189:19)
+    at EventEmitter.g (events.js:199:16)
+    at EventEmitter.emit (events.js:110:17)
+    at statAction (/usr/local/lib/node_modules/phantom-jasmine/node_modules/walkdir/walkdir.js:57:17)
+    at statter (/usr/local/lib/node_modules/phantom-jasmine/node_modules/walkdir/walkdir.js:91:7)
+    at walkdir (/usr/local/lib/node_modules/phantom-jasmine/node_modules/walkdir/walkdir.js:193:3)
+    at Function.walkdir.sync (/usr/local/lib/node_modules/phantom-jasmine/node_modules/walkdir/walkdir.js:12:10)
+    at /usr/local/lib/node_modules/phantom-jasmine/lib/index.js:47:27
+localhost:usda alex$ phantom-jasmine file://localhost/Users/Alex/Desktop/usda/phantom-jasmine/examples/TestRunner.html 
+events.js:87
+      throw Error('Uncaught, unspecified "error" event.');
+            ^
+Error: Uncaught, unspecified "error" event.
+    at Error (native)
+    at EventEmitter.emit (events.js:87:13)
+    at EventEmitter.<anonymous> (/usr/local/lib/node_modules/phantom-jasmine/node_modules/walkdir/walkdir.js:189:19)
+    at EventEmitter.g (events.js:199:16)
+    at EventEmitter.emit (events.js:110:17)
+    at statAction (/usr/local/lib/node_modules/phantom-jasmine/node_modules/walkdir/walkdir.js:57:17)
+    at statter (/usr/local/lib/node_modules/phantom-jasmine/node_modules/walkdir/walkdir.js:91:7)
+    at walkdir (/usr/local/lib/node_modules/phantom-jasmine/node_modules/walkdir/walkdir.js:193:3)
+    at Function.walkdir.sync (/usr/local/lib/node_modules/phantom-jasmine/node_modules/walkdir/walkdir.js:12:10)
+    at /usr/local/lib/node_modules/phantom-jasmine/lib/index.js:47:27
+localhost:usda alex$ PATH

@@ -1,0 +1,99 @@
+body{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:16px;
+    margin: 0px 0px 0px 0px;
+    line-height:20px;
+    color: #676666;
+    background-color: rgb(255,255,255);
+    padding:40px;
+    float:left;
+}
+.row{
+    float:left;
+}
+div h2{
+    font-weight: 200;
+    margin-top:0px;
+}
+div h3{
+    font-weight: 200;
+    margin: -20px 20px 10px 0px;
+}
+div div h4{		
+    text-align: center;		
+}
+p{
+    padding-right: 30px;
+}
+.title{
+    text-align: center;
+    padding:10px;
+}
+#chart-hist-spend{
+    margin-left:0px;
+}
+#chart-row-spenders{
+    margin-bottom:20px;
+}
+.header{
+    margin-top:20px;
+    float:left;
+    text-align: left;
+    margin-left:2%;
+    font-size: 14px;
+    font-weight: 300 !important;
+}
+a{
+    text-decoration: none;
+    color: purple;
+}
+a:hover{
+    color:blue;    
+}
+
+/*Responsive Styling: */
+@media (max-width: 400px){
+    body{
+        padding: 10px;
+        font-size:12px;
+    }
+    div h2{
+        padding: 5px 20px;
+    }
+    div h3{
+        font-weight: 300;
+        margin: -30px 20px -25px 20px;
+    }
+    .header{
+        text-align: left;
+        margin-left:2%;
+        font-size: 12px;
+        font-weight: 300 !important;
+    }
+    .title{
+        font-size:14px;
+        text-align: left;
+        padding:20px;
+        margin-bottom: 0px;
+    }
+    .amount{
+        margin-top: 20px;
+        margin-bottom: -20px;
+    }
+    .country{
+        margin-bottom: -40px;
+    }
+    #chart-ring-year{
+        margin-left:50px;
+        margin-bottom:-20px;
+        margin-top:-15px;
+    }
+    #chart-hist-spend{
+        margin-left:-50px !important;
+        width:90%;
+    }
+    #chart-row-spenders{
+        margin-bottom:0px;
+        margin-left:20px;
+    }
+}

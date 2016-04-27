@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>US Food Imports</title>
+        <meta charset="UTF-8">
+        <meta content="utf-8" http-equiv="encoding">
+        <link rel="stylesheet" type="text/css" href="css/dc.css"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    </head>
+    
+    <body>
+    
+        <div><h2>U.S. Food Imports by Food Group and Country of Origin, 1999 - 2014</h2></div></br>
+        <div><h3 style="color: purple;">A large percentage of American food is imported.  Click to explore how. <a href="" style="font-size:16px;font-weight:bold;padding-left:60px;" onclick="window.location.reload(true);">   Reset</a></h3></div></br>
+        
+        <!--charts-->
+        <div>
+            <div class="row">
+                <div class="title food">By Food Group:</div>
+                <div id="chart-ring-year"></div>
+            </div>
+            <div class="row">
+                <div class="title amount">Imports in billions of dollars ($):</div>
+                <div id="chart-hist-spend"></div> 
+            </div>
+            <div class="row">
+                <div class="title country">By Country, Top 5:</div>
+                <div id="chart-row-spenders"></div>
+            </div>    
+        </div>
+        <!--Description-->
+        <div class="row header">
+            <p>The charts above show a growing share of products imported into the US every year.
+                Seasonal and climatic factors drive U.S. imports of popular types of fruits and vegetables
+                and tropical products.</p>
+            <p>The data set used to create these charts provide import values of edible products entering
+                U.S. ports and their origin of shipment. Data are from the U.S. Department of Commerce and
+                U.S. Census Bureau. Food and beverage import values are compiled by calendar year
+                into food groups corresponding to major commodities or level of processing. </p>
+            <p>16 years of annual data are included above, enabling users to track long-term growth patterns.</p>  
+        </div>
+        <!--sources-->
+        <div class="row header">
+            <div><span>Data Source: <a href="http://www.ers.usda.gov/data-products/us-food-imports.aspx" target="_blank"> U.S. Food Imports</a></span></div>
+            </br>
+            <div><span>Made by <a href="http://www.alexhiguera.com" target="_blank"> Alex Higuera &copy 2016</a> using D3.js, DC.js, and Crossfilter.js.</span></div>
+        </div>
+        
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/dc/1.7.5/dc.min.js"></script>
+        <script src="/components/underscore-min.js" type="text/javascript"></script>
+        <script src="/components/queue.min.js" type="text/javascript"></script>
+        <script src="/components/topojson.min.js" type="text/javascript"></script>
+        
+        <script type="text/javascript" src="js/d3.js"></script>
+        <script type="text/javascript" src="js/crossfilter.js"></script>
+        <script type="text/javascript" src="js/dc.js"></script>
+        <script type="text/javascript" src="js/colorbrewer.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        
+        <script type="text/javascript" src="imports.js"></script>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+
+USDA Data Viz Project 
+====
+
+This project uses USDA data and visualizes it using D3.js, dc.js, and crossfilter.js
+
+
+The following features are supported:
+
+ * Responsive visualization using valid HTML, CSS, and JavaScipt
+ * Visualization frameworks implemented: D3, dc.js, crossfilter.js 
+ * Visualizations support drilldown by category, year, and country of origin
+ * Responsive layout working on both desktop and mobile
+ * Included automated tests using PhantomJS and Jasmine
+ * Animation effects are included via D3 and dc.js
+ * Bootstrap was not used
+
+
+Data
+-----------
+
+ * Data taken from https://raw.githubusercontent.com/faunadb/exercises/master/front-end-visualization/importedfoodsbycountry2015.xls
+ * Only total amounts for the following food types were included and manually merged into a new csv file(data.csv): Meats, Dairy, Fish, Fruits, Vegetables, and Grains
+ * Dimensions between import types, year, country of origin, and amount of money (in billions USD) spent were created using crossfilter.js
+ * Charts were visualized using dc.js pie and bar chart types 
+
+
+Basic Usage
+-----------
+
+Instant gratification:
+
+    Use port 8000:
+    => python -m SimpleHTTPServer
+    Go to http://localhost:8000/
+
+
+Testing
+-----------
+
+ * A template for testing PhantomJS applications with Jasmine, Grunt, and Istanbul was used for the JS testing of this project. 
+ * Instructions for how to set up are here: https://github.com/JamieMason/phantomjs-test-starter
+ * All testing files are included in the phantomjs-test-starter directory
+ * The dc.js API has templated suites for chart testing at: https://github.com/dc-js/dc.js/tree/develop/specso
+ * You can find them in the /phantomjs-test-starter/spec/units/templates folder
+ * Describe functions from the above are referenced in my-module.spec.js
+
+
+LICENSE
+-------
+
+This USDA project is Copyright (c) 2016 [Alex Higuera](http://www.alexhiguera.com/) and
+distributed under the a Creative Commons license. 
